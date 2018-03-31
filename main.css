@@ -1,0 +1,24 @@
+#neos {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+
+}
+
+.title {
+  margin: 0px auto;
+}
+
+.asteroidList {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+  border: solid 5px;
+  border-radius: 10px;
+  border-color: blue;
+  display: inline-block;
+}
+
