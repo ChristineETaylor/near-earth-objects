@@ -41,7 +41,7 @@ function formatDate(dateObject) {
   let day = dateObject.getDate();
   if (day < 10) day = '0' + day;
 
-  return year + '-' + month + '-' + + day;
+  return year + '-' + month + '-' + day;
 }
 
 function displayNeos(neoList) {
