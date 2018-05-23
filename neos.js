@@ -4,33 +4,33 @@
 
 let today = formatDate(new Date());
 
-let url = 'https://api.nasa.gov/neo/rest/v1/feed/today?api_key=v5RFC0BvhWX1dRLupQt3ykxykp0OXc5ULq4OFozA'
+let url = 'https://api.nasa.gov/neo/rest/v1/feed/today?api_key=v5RFC0BvhWX1dRLupQt3ykxykp0OXc5ULq4OFozA';
 
-$.ajax({
-  url: url,
-  success: function (results) {
+// $.ajax({
+//   url: url,
+//   success: function (results) {
 
-    let previous = results.links.prev;
-    let next = results.links.next;
+//     let previous = results.links.prev;
+//     let next = results.links.next;
 
-    let neos = results.near_earth_objects[today];
-    let neoList = [];
+//     let neos = results.near_earth_objects[today];
+//     let neoList = [];
 
-    for (var i = 0; i < neos.length; i++) {
-      neoList.push({
-        name: neos[i].name,
-        link: neos[i].nasa_jpl_url,
-        maxDiameter: neos[i].estimated_diameter.meters.estimated_diameter_max,
-        potentialHazard: neos[i].is_potentially_hazardous_asteroid,
-        missDistance: neos[i].close_approach_data[0].miss_distance.kilometers,
-        absoluteMagnitude: neos[i].absolute_magnitude_h
-      });
-    }
-    links(previous, next);
-    displayNeos(neoList);
-  },
-  error: function (error) { console.log(error); }
-});
+//     for (var i = 0; i < neos.length; i++) {
+//       neoList.push({
+//         name: neos[i].name,
+//         link: neos[i].nasa_jpl_url,
+//         maxDiameter: neos[i].estimated_diameter.meters.estimated_diameter_max,
+//         potentialHazard: neos[i].is_potentially_hazardous_asteroid,
+//         missDistance: neos[i].close_approach_data[0].miss_distance.kilometers,
+//         absoluteMagnitude: neos[i].absolute_magnitude_h
+//       });
+//     }
+//     links(previous, next);
+//     displayNeos(neoList);
+//   },
+//   error: function (error) { console.log(error); }
+// });
 
 function formatDate(dateObject) {
   let year = dateObject.getFullYear();
@@ -41,7 +41,7 @@ function formatDate(dateObject) {
   let day = dateObject.getDate();
   if (day < 10) day = '0' + day;
 
-  return year + '-' + month + '-' + + day;
+  return year + '-' + month + '-' + day;
 }
 
 function displayNeos(neoList) {
