@@ -47,11 +47,14 @@ function displayNeos(neoList) {
   $('.title').prepend(neoList.length);
   $('.title').append(today);
 
+
+
+
   for (neo in neoList) {
     $('.asteroidList').append('<li><a href="' + neoList[neo].link + '">' + neoList[neo].name + '</a><br>' +
-      neoList[neo].absoluteMagnitude + '<br>' +
-      neoList[neo].maxDiameter + '<br>' +
-      neoList[neo].missDistance + '</li>')
+      'Mag: ' + Math.round(neoList[neo].absoluteMagnitude * 100) / 100 + '<br>' +
+      'Diameter: ' + Math.round(neoList[neo].maxDiameter * 100) / 100 + '<br>' +
+      'Distance: ' + Math.round(neoList[neo].missDistance * 100) / 100 + '</li>')
 
     if (neoList[neo].potentialHazard) {
       $('li').css('border-color', 'red');
