@@ -16,7 +16,7 @@ $.ajax({
     let neos = results.near_earth_objects[today];
     let neoList = [];
 
-    for (var i = 0; i < neos.length; i++) {
+    for (let i in neos) {
       neoList.push({
         name: neos[i].name,
         link: neos[i].nasa_jpl_url,
