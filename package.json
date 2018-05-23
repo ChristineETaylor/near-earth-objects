@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/ChristineETaylor/near-earth-objects#readme",
   "dependencies": {
-    "mocha": "3.5.3",
+    "body-parser": "^1.18.2",
     "chai": "^4.1.2",
+    "cors": "^2.8.4",
     "express": "^4.16.1",
-    "jquery": "^3.2.1"
+    "jquery": "^3.3.1",
+    "mocha": "3.5.3",
+    "request": "^2.85.0"
   }
 }
