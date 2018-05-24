@@ -1,7 +1,7 @@
 {
   "name": "near-earth-objects",
   "version": "1.0.0",
-  "description": "Connects to NASA API and displays a list of near-Earth objects orbiting the planet today.",
+  "description": "Connects to NASA Near Earth Objects API to present the NEOs orbiting our planet on the current day.",
   "main": "neos.js",
   "scripts": {
     "test": "test.js"
