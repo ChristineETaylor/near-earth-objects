@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background: radial-gradient(circle at bottom, #010057 0%, #03002e 100%);
+  background: radial-gradient(circle, #040274 10%, #02011b 100%);
   overflow: hidden;
 }
 
@@ -27,6 +27,6 @@ html {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateX(-2000px);
   }
 }
