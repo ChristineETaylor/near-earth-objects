@@ -48,7 +48,8 @@ function displayNeos(neoList) {
   $('.title').append(today);
 
   for (neo in neoList) {
-    $('.asteroidList').append('<li><a href="' + neoList[neo].link + '">' + neoList[neo].name + '</a><br>' +
+    console.log(neoList[neo].link);
+    $('.asteroidList').append('<li><a target="_blank" href="' + neoList[neo].link + ';old=0;orb=1;cov=0;log=0;cad=0#orb">' + neoList[neo].name + '</a><br>' +
       'Mag: ' + displayNumbers(neoList[neo].absoluteMagnitude) + '<br>' +
       'Diameter: ' + displayNumbers(neoList[neo].maxDiameter) + '<br>' +
       'Distance: ' + displayNumbers(neoList[neo].missDistance) + '</li>')
