@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Sunflower:300');
-
 body {
   font-family: 'Sunflower', monospace;
 }
@@ -16,7 +15,7 @@ body {
   text-align: center;
 }
 
-.asteroidList {
+.neoList {
   list-style-type: none;
   margin: 10px auto;
   text-align: center;
@@ -29,13 +28,13 @@ body {
   text-align: center;
 }
 
-.otherDays a:link{
+.otherDays a:link {
   color: white;
   text-decoration-line: none;
 }
 
 a {
-  color: red;
+  color: lightblue;
 }
 
 ul {
@@ -44,13 +43,14 @@ ul {
 }
 
 li {
+  background: #999999;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
   padding: 5px;
-  width: 250px;
-  margin: 5px;
   border: solid 5px;
-  border-color: #00B233;
-  border-radius: 100px;
-  background-color: white;
-  display: inline-block;
+  border-color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
 }
-
