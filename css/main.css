@@ -19,6 +19,29 @@ body {
   list-style-type: none;
   margin: 10px auto;
   text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.neoList ul {
+  margin: 10px;
+  padding: 10px;
+}
+
+.neoList li {
+  background: #999999;
+  border-radius: 50%;
+  height: 150px;
+  width: 25%;
+  border: solid 5px;
+  border-color: white;
+  text-align: center;
+  /* vertical-align: 75p  x; */
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
 }
 
 .otherDays {
@@ -34,23 +57,5 @@ body {
 }
 
 a {
-  color: lightblue;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-li {
-  background: #999999;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  padding: 5px;
-  border: solid 5px;
-  border-color: white;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  color: #1b2735;
 }
