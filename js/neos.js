@@ -8,6 +8,7 @@ console.log(today, typeof today, day, typeof day);
 let apiKey = 'v5RFC0BvhWX1dRLupQt3ykxykp0OXc5ULq4OFozA';
 // let url = 'https://api.nasa.gov/neo/rest/v1/feed/today?api_key=' + apiKey;
 let url = 'https://api.nasa.gov/neo/rest/v1/feed?start_date=' + day + '&end_date=' + today + '&detailed=false&api_key=' + apiKey;
+let abMag = [];
 
 
 $.ajax({
@@ -21,7 +22,7 @@ $.ajax({
     let neoList = [];
 
     for (let i in neos) {
-      console.log(neos[i]);
+      abMag.push(neos[i].absolute_magnitude_h);
       neoList.unshift({
         name: neos[i].name,
         link: neos[i].nasa_jpl_url,
@@ -34,6 +35,7 @@ $.ajax({
     }
     displayNeos(neoList);
     links(previous, next);
+    console.log(abMag);
   },
   error: function (error) { console.log(error); }
 });

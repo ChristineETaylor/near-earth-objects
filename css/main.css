@@ -32,7 +32,7 @@ body {
 
 .neoList li {
   background: #999999;
-  border-radius: 50%;
+  border-radius: 40%;
   height: 150px;
   width: 25%;
   border: solid 5px;
