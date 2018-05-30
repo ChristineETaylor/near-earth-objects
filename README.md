@@ -12,10 +12,14 @@ Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the 
 
 ## Built With
 
-JavaScript
-jQuery
-Sass/CSS
+-JavaScript
+-jQuery
+-Sass/CSS
 
-## Contributors
+## Future development
+- Create D3-based UI demonstrating relative absolute magnitude of NEOs.
 
-Christine E. Taylor
+
+## Author
+
+Christine Taylor
