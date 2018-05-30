@@ -1,6 +1,6 @@
 ## Synopsis
 
-Browser-based APP connects to NASA Near Earth Objects API and displays the NEOs orbiting our planet on the current day.
+Browser-based app connects to NASA Near Earth Objects API and displays the NEOs orbiting our planet on the current day.
 
 ## API Reference
 
