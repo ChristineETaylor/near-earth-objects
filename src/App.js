@@ -17,7 +17,6 @@ class App extends Component {
     fetch(
       "https://api.nasa.gov/neo/rest/v1/feed?start_date=2018-07-28&api_key=v5RFC0BvhWX1dRLupQt3ykxykp0OXc5ULq4OFozA"
     )
-      .then(console.log("FETCH!"))
       .then(response => response.json())
       .then(console.log("RESPONSE RECEIVED"))
       .then(results => {
